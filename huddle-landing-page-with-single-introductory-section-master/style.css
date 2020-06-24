@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url(images/bg-mobile.svg),var(--main-violet);
+    font-size: 11px; 
+    text-align: center;
+    color: white;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    font-size: 16px;
+  }
+
+  :root {
+    --main-violet: hsl(257, 40%, 49%);
+  }
+
+  h1 {
+      font-weight: 700;
+      padding-top: 20px;
+  }
+
+  p { 
+    font-weight: 400;
+    padding: 10px 0;
+  }
+
+  ul {
+      list-style: none;
+  }
+
+  a { 
+      text-decoration: none;
+      color: var(--main-violet);
+  }
+
+  .container {
+    margin: 0 10%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* header */
+header {
+margin: 10%;
+height: auto;
+}
+
+.logo {
+    position: relative;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* body */
+
+.hero-img {
+    width: 100%;
+    height: auto;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.row {
+    padding-top: 20px;
+}
+
+ion-icon,
+ion-icon:visited
+ {
+    border: solid 2px white;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+ion-icon:hover {
+    color: orange;
+    border: solid 2px orange;
+
+}
+
+logo-facebook {
+    color: white;
+}
+
+.btn {
+    background-color: white;
+    color: var(--main-violet);
+    border-radius: 100px;
+    width: 150px;
+    padding: 5px 5px;
+    box-shadow: black 1px;
+    align-items: center;
+    margin-top:10px;
+    box-shadow: 0 4px rgba(70, 70, 70, 0.6);
+
+}
+
+.btn:hover {
+    background-color: lightgrey;
+}
+
+.btn:active {
+    background-color: orange;
+    transform:translateY(4px);
+}
+
+.foot-links {
+    color: orange;
+}
+@media only screen and (min-width: 650px) {
+
+    body {
+    background: url(images/bg-desktop.svg),var(--main-violet);
+    }
+    
+    .container { 
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .col-2 {
+        width: 40%;
+        text-align: left;
+    }
+
+    .col-1 {
+        width: 60%;
+    }
+
+    .btn {
+        text-align: center;
+    }
+    
+}
+
+@media only screen and (min-width: 1440px) 
